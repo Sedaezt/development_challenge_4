@@ -3,22 +3,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Volledige hoogte van het scherm */
-    margin: 0; /* Verwijder standaardmarges */
+    height: 100vh; 
+    margin: 0;
     background-color:#607B7D;
 }
 
 .welcome-page {
     text-align: center;
-    background-image: url('world.png');
-    background-size: contain; /* Schaal de achtergrondafbeelding om volledig in de container te passen */
-    background-repeat: no-repeat; /* Zorg ervoor dat de afbeelding niet wordt herhaald */
-    background-position: center; /* Plaats de achtergrond in het midden van de pagina */
-    display: flex; /* Gebruik flexbox om items te centreren */
-    flex-direction: column; /* Plaats items in kolommen */
-    justify-content: center; /* Centreer items verticaal */
-    align-items: center; /* Centreer items horizontaal */
-    height: 100vh; /* Volledige hoogte van het scherm */
+    background-image: url('images/world.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
 }
 
 
@@ -28,20 +28,21 @@ body {
     background-color: #E0E0E0;
     border-color: transparent;
     border-radius: 12px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Voeg een subtiele box-shadow toe */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
 
 }
 
 .game-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Om het spelcontainer in het midden te plaatsen */
+    align-items: center;
     font-size: 24px;
+
 }
 
 .option {
     display: inline-block;
-    margin: 20px; /* Voeg wat ruimte toe tussen de opties */
+    margin: 20p
 }
 
 .title {
@@ -51,7 +52,7 @@ body {
 }
 .overlay {
     display: flex;
-    justify-content: center; /* Om de opties in het midden van het spelcontainer te plaatsen */
+    justify-content: center; 
 }
 
 #option1,
@@ -63,7 +64,7 @@ body {
 }
 
 .feedback-message {
-    margin-top: 20px; /* Voeg wat ruimte toe tussen het monument en het feedbackbericht */
+    margin-top: 20px;
 }
 
 .info-page {
@@ -74,18 +75,18 @@ body {
 }
 
 .monument-info {
-    width: 100%; /* Beperk de maximale breedte van de informatie */
-    margin-top: 12px; /* Voeg wat ruimte toe tussen de kop en de informatie */
+    width: 100%; 
+    margin-top: 12px;
     font-size: 24px;
 
 }
 
 .monument-image {
-    width: 400px; /* Maak de breedte van de afbeelding 100% van de container */
-    height: auto; /* Laat de hoogte automatisch aanpassen om de aspectverhouding te behouden */
-    max-width: 500px; /* Beperk de maximale breedte van de afbeelding om te voorkomen dat deze te groot wordt */
-    display: block; /* Zorg ervoor dat de afbeelding een blokelement is om marges correct toe te passen */
-    margin: 0 auto; /* Centreer de afbeelding horizontaal in de container */
+    width: 400px; 
+    height: auto; 
+    max-width: 500px;
+    display: block; 
+    margin: 0 auto; 
     border-radius: 48px;
 }
 
@@ -96,7 +97,7 @@ body {
     background-color: #E0E0E0;
     border-color: transparent;
     border-radius: 12px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Voeg een subtiele box-shadow toe */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .feedback-message {
@@ -116,7 +117,7 @@ body {
 
 @media (max-width: 600px) {
     .monument-info {
-        max-width: 100%; /* Verminder de maximale breedte op kleinere schermen */
+        max-width: 100%; 
     }
 
     .monument-image {
