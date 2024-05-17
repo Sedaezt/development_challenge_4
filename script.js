@@ -23,10 +23,9 @@ const monuments = [
 let currentMonumentIndex = 0;
 let xOrientation = null;
 let tiltThreshold = 15;
-let score = 0;
 let gameStarted = false; 
 
-// Voeg event listeners toe voor apparaat oriëntatieveranderingen
+// apparaat oriëntatieveranderingen
 window.addEventListener('deviceorientation', handleOrientation);
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', showNextMonument);
@@ -70,30 +69,38 @@ function showMonument() {
 
     feedbackMessage.textContent = ''; // Reset het feedbackbericht
     nextButton.style.display = 'none'; // Verberg de knop voor het volgende monument
-
-    updateScore(); // score bijwerken
 }
 
 // correct of niet?
 function checkAnswer(selectedOption) {
     const currentMonument = monuments[currentMonumentIndex];
     if (selectedOption === currentMonument.correctAnswer) {
-        score++;
-        feedbackMessage.textContent = 'Juist!';
+        feedbackMessage.textContent = 'Good job!';
     } else {
-        score--;
-        feedbackMessage.textContent = 'Fout!';
+        feedbackMessage.textContent = 'Wrong!';
     }
-    nextButton.style.display = 'block'; // Toon de knop voor het volgende monument
+    setTimeout(() => {
+        feedbackMessage.textContent = ''; // Reset het feedbackbericht
+        if (selectedOption === currentMonument.correctAnswer) {
+            showInfoPage(currentMonument.info);
+        } else {
+            showInfoPage(currentMonument.info);
+        }
+    }, 1000); // Na 1 seconde doorgaan naar de informatiepagina
 }
 
-// score tonen
-function updateScore() {
-    scoreDisplay.textContent = 'Score: ' + score;
+
+
+function showInfoPage(info) {
+    gameContainer.style.display = 'none'; // Verberg het spelcontainer
+    document.getElementById('monument-info').textContent = info;
+    document.getElementById('info-page').style.display = 'block'; // Toon de info-pagina
 }
 
 // volgend monument weergeven
 function showNextMonument() {
+    document.getElementById('info-page').style.display = 'none'; // Verberg de info-pagina
+    gameContainer.style.display = 'block'; // Toon het spelcontainer
     currentMonumentIndex++;
     if (currentMonumentIndex >= monuments.length) {
         currentMonumentIndex = 0;
