@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monument Guessing Game</title>
+    <title>Guess the Monument</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
+    <div id="welcome-page">
+        <h1>Guess the Monument</h1>
+        <button id="start-button">Start</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
         <img id="monument-image" src="" alt="Monument">
         <div id="overlay">
-            <div id="left-option" class="option">Left</div>
-            <div id="right-option" class="option">Right</div>
+            <div id="option1" class="option"></div>
+            <div id="option2" class="option"></div>
         </div>
+        <div id="score">Score: 0</div>
+        <div id="feedback-message"></div>
+        <button id="next-button">Next</button>
+        <button id="next-question-button" style="display: none;">Volgende vraag</button> <!-- Nieuwe knop voor de volgende vraag -->
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
