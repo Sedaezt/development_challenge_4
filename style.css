@@ -126,8 +126,7 @@ body {
 
     #option1,
     #option2 {
-    font-size: 24px;
-    border-radius: 12px;
+font: 1em sans-serif;    border-radius: 12px;
     padding: 10px 32px;
     background-color: rgb(243, 229, 229);
 }
