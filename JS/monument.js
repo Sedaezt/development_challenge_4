@@ -12,7 +12,7 @@ export const monuments = [
         info: 'De Eiffeltoren is een van de bekendste bezienswaardigheden ter wereld en een symbool van Parijs. Het werd ontworpen door Gustave Eiffel voor de Wereldtentoonstelling van 1889 en is sindsdien een iconisch kenmerk van de stad geworden.' 
     },
     { 
-        image: 'images/china.jpg', 
+        image: 'images/china.JPG', 
         countries: ['Thailand', 'China'], 
         correctAnswer: 1, 
         info: 'De Chinese Muur is een reeks verdedigingswerken in Noord-China, gebouwd tussen de 7e eeuw voor Christus en de 17e eeuw na Christus. Het is een van de meest indrukwekkende bouwwerken ter wereld en een UNESCO-werelderfgoed.' 
