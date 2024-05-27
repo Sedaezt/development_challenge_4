@@ -25,8 +25,8 @@ export const monuments = [
     },
     { 
         image: 'images/Christus.jpg', 
-        countries: ['Italië', 'Brazilië'], 
-        correctAnswer: 1, 
+        countries: ['Brazilië', 'Italië'], 
+        correctAnswer: 0, 
         info: 'Christus de Verlosser is een groot standbeeld van Jezus Christus in Rio de Janeiro, Brazilië, en is een van de meest iconische bezienswaardigheden van het land. Het staat op de top van de Corcovado-berg en biedt een adembenemend uitzicht over de stad.' 
     },
     { 
@@ -43,8 +43,8 @@ export const monuments = [
     },
     { 
         image: 'images/tajMahal.jpeg', 
-        countries: ['Pakistan', 'India'], 
-        correctAnswer: 1, 
+        countries: ['India', 'Pakistan'], 
+        correctAnswer: 0, 
         info: 'De Taj Mahal is een iconisch marmeren mausoleum in Agra, India, gebouwd in opdracht van keizer Shah Jahan ter nagedachtenis aan zijn vrouw Mumtaz Mahal. Het staat bekend om zijn prachtige architectuur en wordt beschouwd als een van de zeven wereldwonderen.' 
     }
 ];

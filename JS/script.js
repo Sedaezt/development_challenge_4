@@ -25,7 +25,7 @@ function startGame() {
     welcomePage.style.display = 'none';
     gameContainer.style.display = 'block';
     showMonument();
-    gameStarted = true; // spel start 
+    gameStarted = true; // Markeer het spel als gestart
 }
 
 function handleOrientation(event) {
